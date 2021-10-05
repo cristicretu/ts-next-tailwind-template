@@ -2,7 +2,7 @@
 
 ![preview](https://cdn.discordapp.com/attachments/797485737272541250/894949112099766272/Screenshot_2021-10-05_at_5.06.29_PM.png)
 
-This is a template that can be re-used for projects. It consists of NextJs, TailwindCSS, Typescript + Dark mode (next-themes) + Keybindings (press t or h) + eslint, prettier, postcss.
+This is a template that can be re-used for projects. It consists of NextJs, TailwindCSS, Typescript + Dark mode (next-themes) + Keybindings (press t or h) + eslint, prettier, postcss + Self Hosted Inter Font.
 
 Under the _components_ folder, use Container for each of your pages - as it provides a reusable starting point for every page.
 
