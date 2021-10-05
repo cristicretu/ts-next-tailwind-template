@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           className="text-gray-700 dark:text-gray-300 dark:hover:text-gray-100 hover:text-gray-900 transition"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/cristicretu"
+          href="https://github.com/cristicretu/ultimateTemplate"
         >
           Github
         </a>
@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
         Created with &hearts; by{" "}
         <a
           className="underline text-black dark:text-white font-semibold"
-          href="https://github.com/cristicretu/cretu.dev"
+          href="https://github.com/cristicretu"
         >
           Cristian Crețu
         </a>

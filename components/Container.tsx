@@ -64,7 +64,7 @@ export default function Container(props) {
         </div>
 
         <a
-          href="https://github.com/cristicretu/"
+          href="https://github.com/cristicretu/ultimateTemplate"
           target="_blank"
           rel="noreferrer"
           aria-label="Github"
