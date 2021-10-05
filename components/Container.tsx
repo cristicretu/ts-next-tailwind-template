@@ -16,7 +16,8 @@ export default function Container(props) {
   const meta = {
     title: "Template name",
     description: "Template description",
-    image: "",
+    image:
+      "https://cdn.discordapp.com/attachments/797485737272541250/893912493255176192/UnicornVectorGradient_7.png",
     type: "website",
     ...customMeta,
   };
