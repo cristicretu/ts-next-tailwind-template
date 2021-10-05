@@ -58,6 +58,21 @@ export const BigText: React.FC<BigTextProps> = ({ slides }) => {
           <p className='mt-4 sm:text-3xl text-2xl tracking-normal'>
             Front-End Template.
           </p>
+          <div>
+            <a
+              href='https://www.producthunt.com/posts/ultimate-front-end-template?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ultimate-front-end-template'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <img
+                src='https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=314876&theme=light'
+                alt='Ultimate Front-End Template - Free & Completely Reusable Front-End Template | Product Hunt'
+                width='250'
+                className='pt-8'
+                height='54'
+              />
+            </a>
+          </div>
         </div>
       </>
     );
