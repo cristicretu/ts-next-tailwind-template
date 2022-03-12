@@ -1,13 +1,13 @@
-import { ThemeProvider } from "next-themes";
-import "tailwindcss/tailwind.css";
-import "styles/globals.css";
+import { ThemeProvider } from 'next-themes'
+import 'tailwindcss/tailwind.css'
+import 'styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: any) {
   return (
-    <ThemeProvider attribute="class" disableTransitionOnChange>
+    <ThemeProvider attribute='class' disableTransitionOnChange>
       <Component {...pageProps} />
     </ThemeProvider>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp
