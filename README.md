@@ -13,7 +13,7 @@ Under the _components_ folder, use Container for each of your pages - as it prov
 ## Getting started
 
 1. With 'use as template' repository
-![preview](https://cdn.discordapp.com/attachments/797485737272541250/894981214077861928/unknown.png)
+   ![preview](https://cdn.discordapp.com/attachments/797485737272541250/894981214077861928/unknown.png)
 
 2. Clone the project
 
@@ -25,7 +25,7 @@ git clone https://github.com/cristicretu/ts-next-tailwind-template.git
 git clone git@github.com:cristicretu/ts-next-tailwind-template.git
 ```
 
-3. With ```create-next-app```
+3. With `create-next-app`
 
 ```bash
 npx create-next-app -e https://github.com/cristicretu/ts-next-tailwind-template project-name
@@ -63,7 +63,7 @@ changes to
 import TextField from "components/TextField.tsx"
 ```
 
-### Seo optimization found in ```Container.tsx```
+### Seo optimization found in `Container.tsx`
 
 ### Folder structuring & organization
 

@@ -1,5 +1,5 @@
 module.exports = {
   eslint: {
-    dirs: ["src"],
+    dirs: ['src'],
   },
-};
+}
