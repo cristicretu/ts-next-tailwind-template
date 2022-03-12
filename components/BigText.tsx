@@ -1,25 +1,26 @@
 // https://github.com/delbaoliveira/website/blob/main/ui/challenge/TextSlider.tsx
-import cx from 'clsx';
-import React from 'react';
-import { useInterval } from 'react-use';
+import React from 'react'
+
+import cx from 'clsx'
+import { useInterval } from 'react-use'
 
 interface BigTextProps {
-  slides: Array<string>;
+  slides: Array<string>
 }
 
 export const BigText: React.FC<BigTextProps> = ({ slides }) => {
   {
-    const [currentSlide, setSlide] = React.useState(0);
+    const [currentSlide, setSlide] = React.useState(0)
 
-    const totalSlides = slides.length;
+    const totalSlides = slides.length
 
     useInterval(() => {
       if (totalSlides - 1 === currentSlide) {
-        setSlide(0);
+        setSlide(0)
       } else {
-        setSlide(currentSlide + 1);
+        setSlide(currentSlide + 1)
       }
-    }, 2000);
+    }, 2000)
 
     return (
       <>
@@ -53,7 +54,7 @@ export const BigText: React.FC<BigTextProps> = ({ slides }) => {
                   {text}
                 </span>
               </span>
-            );
+            )
           })}
           <p className='mt-4 sm:text-3xl text-2xl tracking-normal'>
             Front-End Template.
@@ -75,6 +76,6 @@ export const BigText: React.FC<BigTextProps> = ({ slides }) => {
           </div>
         </div>
       </>
-    );
+    )
   }
-};
+}

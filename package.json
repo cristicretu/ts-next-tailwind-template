@@ -9,6 +9,69 @@
     "lint": "npx eslint . --ext .ts,.tsx",
     "lint:fix": "npx eslint . --ext .ts,.tsx --fix"
   },
+  "prettier": {
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "tabWidth": 2,
+    "printWidth": 80,
+    "useTabs": false,
+    "semi": false,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "arrowParens": "avoid"
+  },
+  "eslintConfig": {
+    "extends": [
+      "next",
+      "eslint:recommended",
+      "next/core-web-vitals",
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "ignorePatterns": [
+      "postcss.config.js",
+      "tailwind.config.js"
+    ],
+    "rules": {
+      "import/order": [
+        "error",
+        {
+          "groups": [
+            "builtin",
+            "external",
+            "internal"
+          ],
+          "pathGroups": [
+            {
+              "pattern": "react",
+              "group": "external",
+              "position": "before"
+            }
+          ],
+          "pathGroupsExcludedImportTypes": [
+            "react"
+          ],
+          "newlines-between": "always",
+          "alphabetize": {
+            "order": "asc",
+            "caseInsensitive": true
+          }
+        }
+      ],
+      "no-unused-vars": "off",
+      "no-console": "warn",
+      "@typescript-eslint/explicit-module-boundary-types": "off"
+    },
+    "globals": {
+      "React": true,
+      "JSX": true
+    }
+  },
   "dependencies": {
     "clsx": "^1.1.1",
     "eslint-config-prettier": "^8.5.0",
@@ -21,13 +84,14 @@
   "devDependencies": {
     "@types/node": "^17.0.21",
     "@types/react": "^17.0.27",
-    "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "@typescript-eslint/parser": "^4.33.0",
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
+    "@typescript-eslint/parser": "^5.14.0",
     "autoprefixer": "^10.2.6",
-    "eslint": "^7.32.0",
+    "eslint": "^8.11.0",
     "eslint-config-next": "11.1.2",
+    "eslint-plugin-prettier": "^4.0.0",
     "postcss": "^8.3.5",
-    "prettier": "2.4.1",
+    "prettier": "^2.5.1",
     "tailwindcss": "^2.2.4",
     "typescript": "^4.4.3"
   },

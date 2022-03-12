@@ -1,8 +1,10 @@
+import React, { useEffect, useState } from 'react'
+
 import { useTheme } from 'next-themes'
 import { useRouter } from 'next/dist/client/router'
 import Head from 'next/head'
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+
 import Footer from 'components/Footer'
 
 export default function Container(props: any) {
@@ -15,7 +17,8 @@ export default function Container(props: any) {
   const meta = {
     title: 'Template name',
     description: 'Template description',
-    image: 'https://cdn.discordapp.com/attachments/797485737272541250/893912493255176192/UnicornVectorGradient_7.png',
+    image:
+      'https://cdn.discordapp.com/attachments/797485737272541250/893912493255176192/UnicornVectorGradient_7.png',
     type: 'website',
     ...customMeta,
   }
@@ -42,16 +45,25 @@ export default function Container(props: any) {
         <meta name='twitter:title' content={meta.title} />
         <meta name='twitter:description' content={meta.description} />
         <meta name='twitter:image' content={meta.image} />
-        {meta.date && <meta property='article:published_time' content={meta.date} />}
+        {meta.date && (
+          <meta property='article:published_time' content={meta.date} />
+        )}
       </Head>
       <nav className='flex items-center sticky-nav justify-between w-full max-w-5xl py-6 px-2 sm:px-8 md:px-40 mx-auto bg-white dark:bg-gray-900 bg-opacity-50 text-gray-900 dark:text-gray-100'>
         <div className='flex space-x-2 text-base items-center'>
           <Link href='/'>
-            <a className='text-gray-600 hover:text-gray-900 dark:hover:text-gray-100 dark:text-gray-300'>Home</a>
+            <a className='text-gray-600 hover:text-gray-900 dark:hover:text-gray-100 dark:text-gray-300'>
+              Home
+            </a>
           </Link>
         </div>
 
-        <a href='https://github.com/cristicretu/ultimateTemplate' target='_blank' rel='noreferrer' aria-label='Github'>
+        <a
+          href='https://github.com/cristicretu/ultimateTemplate'
+          target='_blank'
+          rel='noreferrer'
+          aria-label='Github'
+        >
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='18'
