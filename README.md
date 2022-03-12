@@ -88,3 +88,5 @@ import TextField from 'components/TextField.tsx'
 ### Favicons and more configs
 
 > Under `/public/static/favicons/`
+
+![preview](https://cdn.discordapp.com/attachments/797485737272541250/952211447503528007/Frame_7.png)
