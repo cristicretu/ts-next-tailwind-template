@@ -1,8 +1,9 @@
 // https://github.com/delbaoliveira/website/blob/main/ui/challenge/TextSlider.tsx
 import React from 'react'
 
-import cx from 'clsx'
 import { useInterval } from 'react-use'
+
+import classNames from 'lib/classNames'
 
 interface BigTextProps {
   slides: Array<string>
@@ -31,23 +32,21 @@ export default function BigText({ slides }: BigTextProps) {
           return (
             <span key={text} className='relative block text-center'>
               <span
-                className={cx('absolute transition duration-1000', {
-                  'opacity-0': currentSlide === index,
-                  'opacity-100': currentSlide !== index,
-                })}
+                className={classNames(
+                  'absolute transition duration-1000',
+                  currentSlide !== index ? 'opacity-100' : 'opacity-0'
+                )}
                 aria-hidden={true}
               >
                 {text}
               </span>
 
               <span
-                className={cx(
+                className={classNames(
                   'decoration-clone bg-clip-text text-transparent bg-gradient-to-r',
-                  {
-                    'from-yellow-400 via-red-500 to-pink-500': index === 0,
-                    'from-purple-400 via-pink-500 to-red-500': index === 1,
-                    'from-green-400 to-blue-500': index === 2,
-                  }
+                  index === 0 ? 'from-yellow-400 via-red-500 to-pink-500' : '',
+                  index === 1 ? 'from-purple-400 via-pink-500 to-red-500' : '',
+                  index === 2 ? 'from-green-400 to-blue-500' : ''
                 )}
               >
                 {text}
@@ -61,21 +60,6 @@ export default function BigText({ slides }: BigTextProps) {
         <p className='mt-6 text-lg font-medium tracking-normal'>
           🚀 Edit pages/index.tsx to get started.
         </p>
-        <div>
-          <a
-            href='https://www.producthunt.com/posts/ultimate-front-end-template?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ultimate-front-end-template'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <img
-              src='https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=314876&theme=light'
-              alt='Ultimate Front-End Template - Free & Completely Reusable Front-End Template | Product Hunt'
-              width='250'
-              className='pt-8'
-              height='54'
-            />
-          </a>
-        </div>
       </div>
     </div>
   )

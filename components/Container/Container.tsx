@@ -8,7 +8,7 @@ import Link from 'next/link'
 import Footer from 'components/Footer/Footer'
 
 export default function Container(props: any) {
-  const [Mounted, setMounted] = useState<boolean>(false)
+  const [, setMounted] = useState<boolean>(false)
   const { resolvedTheme, setTheme } = useTheme()
 
   const { children, ...customMeta } = props
@@ -33,15 +33,21 @@ export default function Container(props: any) {
         <title>{meta.title}</title>
         <meta name='robots' content='follow, index' />
         <meta content={meta.description} name='description' />
-        {/* <meta property="og:url" content={`https://cretu.dev${router.asPath}`} /> */}
-        {/* <link rel="canonical" href={`https://cretu.dev${router.asPath}`} /> */}
+        <meta
+          property='og:url'
+          content={`https://template.cretu.dev${router.asPath}`}
+        />
+        <link
+          rel='canonical'
+          href={`https://templatecretu.dev${router.asPath}`}
+        />
         <meta property='og:type' content={meta.type} />
         <meta property='og:site_name' content='Template' />
         <meta property='og:description' content={meta.description} />
         <meta property='og:title' content={meta.title} />
         <meta property='og:image' content={meta.image} />
         <meta name='twitter:card' content='summary_large_image' />
-        {/* <meta name="twitter:site" content="@cristicrtu" /> */}
+        <meta name='twitter:site' content='@cristicrtu' />
         <meta name='twitter:title' content={meta.title} />
         <meta name='twitter:description' content={meta.description} />
         <meta name='twitter:image' content={meta.image} />
