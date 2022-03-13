@@ -15,8 +15,6 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Inter', ...fontFamily.sans],
-      display: ['Inter'],
-      body: ['Inter'],
     },
   },
   variants: {

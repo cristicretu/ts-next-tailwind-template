@@ -75,7 +75,6 @@
     }
   },
   "dependencies": {
-    "clsx": "^1.1.1",
     "eslint-config-prettier": "^8.5.0",
     "next": "^12.1.0",
     "next-themes": "^0.0.15",
