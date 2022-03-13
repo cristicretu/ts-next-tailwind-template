@@ -2,6 +2,7 @@
   "name": "template",
   "version": "1.0.0",
   "private": "true",
+  "description": "Customizable Front-End Template",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -107,5 +108,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "keywords": [
+    "tailwindcss",
+    "template",
+    "radix",
+    "react",
+    "nextjs"
+  ],
+  "author": {
+    "email": "crisemcr@gmail.com",
+    "name": "Cristian Crețu",
+    "url": "https://cretu.dev"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cristicretu/ts-next-tailwind-template/issues"
+  },
+  "homepage": "https://template.cretu.dev"
 }
