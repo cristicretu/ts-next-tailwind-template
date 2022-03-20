@@ -9,6 +9,7 @@
 - Typescript 🦺
 - Dark Mode Support 🌓
 - ESLint + Prettier Config 📂
+- Husky 🐶
 - Self-Hosted Inter Font ␊
 
 Under the _components_ folder, use Container for each of your pages - as it provides a reusable starting point for every page.
