@@ -96,11 +96,11 @@
     "eslint": "^8.11.0",
     "eslint-config-next": "11.1.2",
     "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.0",
     "postcss": "^8.3.5",
     "prettier": "^2.5.1",
     "tailwindcss": "^2.2.4",
-    "typescript": "^4.4.3",
-    "husky": "^7.0.0"
+    "typescript": "^4.4.3"
   },
   "browserslist": {
     "production": [
