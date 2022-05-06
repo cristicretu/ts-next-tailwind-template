@@ -11,6 +11,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'gray-1000': '#050505',
         gray: colors.neutral,
       },
     },
