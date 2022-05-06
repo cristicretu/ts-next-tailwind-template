@@ -2,6 +2,8 @@
 
 ![preview](https://cdn.discordapp.com/attachments/797485737272541250/952208625806495815/image_5.png)
 
+> Most elements are taken from [my website](https://cretu.dev).
+
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcristicretu%2Fts-next-tailwind-template)
 
 ## Ingredients ✨:
@@ -52,11 +54,13 @@ yarn install
 
 ## Included
 
+### Custom classNames function
+> Under `/lib/classNames`
+
 ### Packages
 
-1. Clsx: A tiny (228B) utility for constructing className strings conditionally.
-2. Next-themes: An abstraction for themes in your Next.js app.
-3. react-use: react-hooks
+1. Next-themes: An abstraction for themes in your Next.js app.
+2. react-use: react-hooks
 
 ### Custom globals.css
 
