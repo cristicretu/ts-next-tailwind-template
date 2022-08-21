@@ -20,8 +20,7 @@
     "lint": "eslint --ext=jsx,ts,tsx .",
     "lint:fix": "eslint --ext=jsx,ts,tsx . --fix",
     "format": "prettier --write \"./**/*.{js,jsx,ts,tsx}\"",
-    "prepare": "husky install",
-    "postinstall": "yarn husky install && yarn build"
+    "prepare": "husky install"
   },
   "dependencies": {
     "eslint-config-prettier": "^8.5.0",
