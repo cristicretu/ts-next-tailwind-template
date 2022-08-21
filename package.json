@@ -3,81 +3,25 @@
   "version": "1.0.0",
   "private": "true",
   "description": "Customizable Front-End Template",
+  "author": {
+    "email": "crisemcr@gmail.com",
+    "name": "Cristian Crețu",
+    "url": "https://cretu.dev"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cristicretu/ts-next-tailwind-template/issues"
+  },
+  "homepage": "https://template.cretu.dev",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "npx eslint . --ext .ts,.tsx",
-    "lint:fix": "npx eslint . --ext .ts,.tsx --fix",
-    "format": "prettier --write .",
-    "check-format": "prettier --list-different \"./**/*.{md,mdx,ts,js,tsx,jsx}\"",
+    "lint": "eslint --ext=jsx,ts,tsx .",
+    "lint:fix": "eslint --ext=jsx,ts,tsx . --fix",
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install",
-    "postinstall": "yarn husky install && yarn build",
-    "pre-commit": "yarn lint:fix",
-    "pre-push": "yarn check-format"
-  },
-  "prettier": {
-    "singleQuote": true,
-    "jsxSingleQuote": true,
-    "tabWidth": 2,
-    "printWidth": 80,
-    "useTabs": false,
-    "semi": false,
-    "trailingComma": "es5",
-    "bracketSpacing": true,
-    "arrowParens": "avoid"
-  },
-  "eslintConfig": {
-    "extends": [
-      "next",
-      "eslint:recommended",
-      "next/core-web-vitals",
-      "eslint:recommended",
-      "plugin:@typescript-eslint/recommended",
-      "plugin:prettier/recommended"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "plugins": [
-      "@typescript-eslint"
-    ],
-    "ignorePatterns": [
-      "postcss.config.js",
-      "tailwind.config.js"
-    ],
-    "rules": {
-      "import/order": [
-        "error",
-        {
-          "groups": [
-            "builtin",
-            "external",
-            "internal"
-          ],
-          "pathGroups": [
-            {
-              "pattern": "react",
-              "group": "external",
-              "position": "before"
-            }
-          ],
-          "pathGroupsExcludedImportTypes": [
-            "react"
-          ],
-          "newlines-between": "always",
-          "alphabetize": {
-            "order": "asc",
-            "caseInsensitive": true
-          }
-        }
-      ],
-      "no-unused-vars": "off",
-      "no-console": "warn",
-      "@typescript-eslint/explicit-module-boundary-types": "off"
-    },
-    "globals": {
-      "React": true,
-      "JSX": true
-    }
+    "postinstall": "yarn husky install && yarn build"
   },
   "dependencies": {
     "eslint-config-prettier": "^8.5.0",
@@ -93,14 +37,27 @@
     "@typescript-eslint/eslint-plugin": "^5.33.1",
     "@typescript-eslint/parser": "^5.33.1",
     "autoprefixer": "^10.4.8",
-    "eslint": "^8.22.0",
-    "eslint-config-next": "12.2.5",
+    "eslint": "^8.19.0",
+    "eslint-config-next": "12.2.2",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
     "husky": "^8.0.1",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
+    "lint-staged": "^13.0.3",
     "tailwindcss": "^3.1.8",
     "typescript": "^4.7.4"
+  },
+  "lint-staged": {
+    "*.{tsx},*.{ts},*.{mdx}": [
+      "eslint --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "browserslist": {
     "production": [
@@ -120,15 +77,5 @@
     "radix",
     "react",
     "nextjs"
-  ],
-  "author": {
-    "email": "crisemcr@gmail.com",
-    "name": "Cristian Crețu",
-    "url": "https://cretu.dev"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/cristicretu/ts-next-tailwind-template/issues"
-  },
-  "homepage": "https://template.cretu.dev"
+  ]
 }

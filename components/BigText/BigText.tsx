@@ -23,9 +23,9 @@ export default function BigText({ slides }: BigTextProps) {
   }, 2000)
 
   return (
-    <div className='text-6xl md:text-9xl font-extrabold tracking-tight flex flex-col items-center'>
+    <div className='flex flex-col items-center text-6xl font-extrabold tracking-tight md:text-9xl'>
       <div className='flex flex-col items-center'>
-        <p className='sm:text-3xl text-2xl tracking-normal'>The ultimate</p>
+        <p className='text-2xl tracking-normal sm:text-3xl'>The ultimate</p>
         {slides.map((text, index) => {
           return (
             <span key={text} className='relative block text-center'>
@@ -52,11 +52,11 @@ export default function BigText({ slides }: BigTextProps) {
             </span>
           )
         })}
-        <p className='mt-4 sm:text-3xl text-2xl tracking-normal'>
+        <p className='mt-4 text-2xl tracking-normal sm:text-3xl'>
           Front-End Template.
         </p>
-        <p className='mt-6 text-lg font-medium tracking-normal'>
-          🚀 Edit pages/index.tsx to get started.
+        <p className='mt-6 text-lg font-medium tracking-normal text-tertiary'>
+          Edit pages/index.tsx to get started. 🚀
         </p>
       </div>
     </div>

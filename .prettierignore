@@ -32,3 +32,12 @@ yarn-error.log*
 
 # vercel
 .vercel
+.cache
+package.json
+package-lock.json
+public
+node_modules
+out_functions
+out_publish
+.next
+yarn.lock
