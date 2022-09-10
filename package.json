@@ -1,18 +1,9 @@
 {
-  "name": "template",
-  "version": "1.0.0",
+  "name": "ts-next-tailwind-template",
+  "version": "0.5.0",
   "private": "true",
   "description": "Customizable Front-End Template",
-  "author": {
-    "email": "crisemcr@gmail.com",
-    "name": "Cristian Crețu",
-    "url": "https://cretu.dev"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/cristicretu/ts-next-tailwind-template/issues"
-  },
-  "homepage": "https://template.cretu.dev",
+  "packageManager": "pnpm@7.9.5",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -58,6 +49,16 @@
       "pre-commit": "lint-staged"
     }
   },
+  "author": {
+    "email": "crisemcr@gmail.com",
+    "name": "Cristian Crețu",
+    "url": "https://cretu.dev"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cristicretu/ts-next-tailwind-template/issues"
+  },
+  "homepage": "https://template.cretu.dev",
   "browserslist": {
     "production": [
       ">0.2%",
