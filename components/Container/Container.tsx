@@ -64,7 +64,7 @@ export default function Container(props: any) {
           )}
         </Head>
 
-        <nav className='sticky w-full bg-gray-100/40 z-[1] filter-blur dark:bg-gray-1000/40 top-2 md:top-4 max-w-2xl px-4 py-2 rounded-md mx-auto flex justify-between items-center'>
+        <nav className='sticky w-full bg-gray-100/40 z-[1] filter-blur dark:bg-gray-900 top-2 md:top-4 max-w-2xl px-4 py-2 rounded-md mx-auto flex justify-between items-center'>
           <div className='flex flex-row gap-1 text-tertiary'>
             <Link
               href='/'
