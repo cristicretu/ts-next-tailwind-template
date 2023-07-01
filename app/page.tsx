@@ -1,6 +1,3 @@
-import ExternalLink from '@/ui/ExternalLink'
-import Image from 'next/image'
-
 export default function Home() {
   return (
     <div className='flex flex-col gap-16'>
@@ -8,7 +5,7 @@ export default function Home() {
       <Contact />
       <AboutMe />
     </div>
-  )
+  );
 }
 
 function Header() {
@@ -21,7 +18,7 @@ function Header() {
         </p>
       </div>
     </div>
-  )
+  );
 }
 
 function AboutMe() {
@@ -37,7 +34,7 @@ function AboutMe() {
         </p>
       </div>
     </div>
-  )
+  );
 }
 
 function ContactLink({
@@ -84,7 +81,7 @@ function ContactLink({
         </p>
       )}
     </span>
-  )
+  );
 }
 
 function Contact() {
@@ -100,5 +97,5 @@ function Contact() {
         <ContactLink href='https://cretu.dev' title='cretu' website='Author' />
       </div>
     </div>
-  )
+  );
 }

@@ -1,12 +1,12 @@
-import Footer from '../ui/Footer'
-import './globals.css'
-import Providers from './providers'
-import { cn } from '@/lib/className'
-import AnimateEnter from '@/ui/AnimateEnter'
-import { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import Footer from '../ui/Footer';
+import './globals.css';
+import Providers from './providers';
+import { cn } from '@/lib/className';
+import AnimateEnter from '@/ui/AnimateEnter';
+import { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   authors: [{ name: 'Cristian Crețu', url: 'https://cretu.dev' }],
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
   verification: {
     google: 'fK4YqLAHjoaynXLF1e5gaPzDNOircgiYSgAwSXqr61o',
   },
-}
+};
 
 export default function RootLayout({
   children,
@@ -102,5 +102,5 @@ export default function RootLayout({
         </Providers>
       </body>
     </html>
-  )
+  );
 }
