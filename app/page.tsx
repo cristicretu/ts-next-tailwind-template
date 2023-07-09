@@ -3,7 +3,7 @@ export default function Home() {
     <div className='flex flex-col gap-16'>
       <Header />
       <Contact />
-      <AboutMe />
+      <About />
     </div>
   );
 }
@@ -21,10 +21,9 @@ function Header() {
   );
 }
 
-function AboutMe() {
+function About() {
   return (
     <div className='flex flex-col gap-4'>
-      <p className='text-tertiary'>About</p>
       <div className='text-secondary flex flex-col gap-4'>
         <p className='font-bold'>Edit /app/page.tsx to get started ☄️.</p>
         <p>
@@ -87,7 +86,6 @@ function ContactLink({
 function Contact() {
   return (
     <div className='flex flex-col gap-4'>
-      <p className='text-tertiary'>Contact</p>
       <div className='grid grid-cols-2 gap-2 md:grid-cols-3'>
         <ContactLink
           href='https://github.com/cristicretu/ts-next-tailwind-template'
